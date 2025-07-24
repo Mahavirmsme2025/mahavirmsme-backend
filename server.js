@@ -104,7 +104,6 @@ app.post('/api/contact', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
-const express = require("express");
 const cors = require("cors");
 
 app.use(cors({ origin: "https://mahavirmsme.netlify.app" })); // Allow frontend requests
