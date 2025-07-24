@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 // --- Configuration ---
 // Define paths to important directories and files
-const PUBLIC_DIR = path.join(__dirname, 'public');
+const PUBLIC_DIR = path.join(__dirname, '..', 'public');
 const PROJECT_REPORTS_DIR = path.join(PUBLIC_DIR, 'ProjectReports2');
 const EXCEL_FILE = path.join(__dirname, 'contacts.xlsx');
 
