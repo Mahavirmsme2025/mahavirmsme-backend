@@ -104,3 +104,16 @@ app.post('/api/contact', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
+const cors = require("cors");
+
+app.use(cors({ origin: "https://mahavirmsme.netlify.app" })); // Allow frontend requests
+app.use(express.json());
+
+app.post("/submit-form", (req, res) => {
+  console.log(req.body); // or write to Excel here
+  res.json({ message: "Form received!" });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
